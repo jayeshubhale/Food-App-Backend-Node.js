@@ -1,0 +1,1104 @@
+{
+	"info": {
+		"_postman_id": "2947f14b-f010-4c38-a975-ae41ae31e94d",
+		"name": "food-app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16648026",
+		"_collection_link": "https://cloudy-rocket-781339.postman.co/workspace/My-Workspace~dd8ec5a7-fb19-4e02-89c7-e02171c67b82/collection/16648026-2947f14b-f010-4c38-a975-ae41ae31e94d?action=share&source=collection_link&creator=16648026"
+	},
+	"item": [
+		{
+			"name": "AUTH",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "jayeshubhale45@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "4545",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "userName",
+									"value": "Jayesh Ubhale",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "jayeshubhale45@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "9112603100",
+									"type": "text"
+								},
+								{
+									"key": "answer",
+									"value": "Hello 45...!",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "Pune",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "4545",
+									"type": "text"
+								},
+								{
+									"key": "usertype",
+									"value": "admin",
+									"type": "text"
+								},
+								{
+									"key": "profile",
+									"type": "file",
+									"src": "postman-cloud:///1eed0885-6f1f-4050-8853-7ab492ea8685",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "javan beldar 2",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "suchin121211gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "number",
+									"value": "0025522022",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "11221122",
+									"type": "text"
+								},
+								{
+									"key": "profileImage",
+									"type": "file",
+									"src": "/D:/Node-JS/One Stop/uploads/aadharCard-1699266362963-274903300.jpg",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4200/createAdmin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4200",
+							"path": [
+								"createAdmin"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "GET USER",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "bearere eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YWUzY2IxYTI0ZjgyNmNjNzA1MmU1YSIsImlhdCI6MTcwNTkzNDIyNSwiZXhwIjoxNzA2NTM5MDI1fQ.SibHe-hDUXFUIQCQfnfoAUMdgC0dWcVNaoMdDbobMjU",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/user/getUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"getUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE USER",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "bearere eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YTY4Mzc0YTg0MzdhZjcxMGUzMjhmNSIsImlhdCI6MTcwNTQxMTY2MiwiZXhwIjoxNzA2MDE2NDYyfQ.Q6s8LTLIxShgFpbu_bv-GofXHWs1-a8Il9vDUzrqfH4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "userName",
+									"value": "Rajesh Megha 2",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "banglore india",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "7378709432",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/user/updateUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"updateUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RESET PASSWORD",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "bearere eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YTIyMThmMTkxOTUzZmE3OGE3OTJiYiIsImlhdCI6MTcwNTEyNDM1MSwiZXhwIjoxNzA1NzI5MTUxfQ.ZMjGmvJRwLM_GTL6w8J1euC4ZmuB9bqE4snZQ7zL9mg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "raj@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "answer",
+									"value": "hello",
+									"type": "text"
+								},
+								{
+									"key": "newPassword",
+									"value": "1234554321",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/user/resetPassword",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"resetPassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE PASSWORD",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "bearere eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YTIyMThmMTkxOTUzZmE3OGE3OTJiYiIsImlhdCI6MTcwNTEyNDM1MSwiZXhwIjoxNzA1NzI5MTUxfQ.ZMjGmvJRwLM_GTL6w8J1euC4ZmuB9bqE4snZQ7zL9mg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "oldPassword",
+									"value": "12345678",
+									"type": "text"
+								},
+								{
+									"key": "newPassword",
+									"value": "1234554321",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/user/updatePassword",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"updatePassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE ACCOUNT",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "bearere eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1OWY4ZjcyMDVkNjU1ZThjMzI2MTAxZSIsImlhdCI6MTcwNDk1ODgwMiwiZXhwIjoxNzA1NTYzNjAyfQ.Zt5YYtu7EjpnK-1JNMgREhEpHmMrW2w568n6ssYniDs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "65a68374a8437af710e328f5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/user/deleteUser/65a68374a8437af710e328f5?id=65a68374a8437af710e328f5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"deleteUser",
+								"65a68374a8437af710e328f5"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "65a68374a8437af710e328f5"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "RESTURENT",
+			"item": [
+				{
+					"name": "CRETE RESTURANT",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "bearere eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YTIyMThmMTkxOTUzZmE3OGE3OTJiYiIsImlhdCI6MTcwNTEyNDM1MSwiZXhwIjoxNzA1NzI5MTUxfQ.ZMjGmvJRwLM_GTL6w8J1euC4ZmuB9bqE4snZQ7zL9mg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "butter chicken",
+									"type": "text"
+								},
+								{
+									"key": "foods[dishName]",
+									"value": "chees-1",
+									"type": "text"
+								},
+								{
+									"key": "foods[price]",
+									"value": "200",
+									"type": "text"
+								},
+								{
+									"key": "time",
+									"value": "9am to 9pm",
+									"type": "text"
+								},
+								{
+									"key": "pickup",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "delivery",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "isOpen",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "logoUrl",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "rating",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "ratingCount",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "code",
+									"value": "SSQQ2",
+									"type": "text"
+								},
+								{
+									"key": "coords[id]",
+									"value": "111",
+									"type": "text"
+								},
+								{
+									"key": "coords[latitude]",
+									"value": "112",
+									"type": "text"
+								},
+								{
+									"key": "coords[latitudeDelta]",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "coords[longitude]",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "coords[longitudeDelta]",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "coords[address]",
+									"value": "Mumbai India",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/resturant/createRestaurants",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"resturant",
+								"createRestaurants"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET ALL RESTURANT",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/resturant/getAllResturants",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"resturant",
+								"getAllResturants"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET RESTURANT BY ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/resturant/getResturantId/65a67fb0a8437af710e328e3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"resturant",
+								"getResturantId",
+								"65a67fb0a8437af710e328e3"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE ACCOUNT",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "bearere eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YTIyMThmMTkxOTUzZmE3OGE3OTJiYiIsImlhdCI6MTcwNTEyNDM1MSwiZXhwIjoxNzA1NzI5MTUxfQ.ZMjGmvJRwLM_GTL6w8J1euC4ZmuB9bqE4snZQ7zL9mg",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/resturant/delete/65a67fb0a8437af710e328e3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"resturant",
+								"delete",
+								"65a67fb0a8437af710e328e3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CATEGORY",
+			"item": [
+				{
+					"name": "CREATE Category",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YTJiY2EyYzdmYWFhNTQxMjE1OWRjNCIsImlhdCI6MTcwNTMxNzE0MiwiZXhwIjoxNzA1OTIxOTQyfQ.JXw3G_hq78zVNbp9c4zE8QEfKHUaY7GAtXLF-SuY374",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Manchurian",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/category/createCategory",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"category",
+								"createCategory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET ALL Category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/category/getAllCategory",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"category",
+								"getAllCategory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE Category",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YTJiY2EyYzdmYWFhNTQxMjE1OWRjNCIsImlhdCI6MTcwNTMxNzE0MiwiZXhwIjoxNzA1OTIxOTQyfQ.JXw3G_hq78zVNbp9c4zE8QEfKHUaY7GAtXLF-SuY374",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "manchurian with soyabin chilli",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/category/updateCategory/65a67e97a8437af710e328db",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"category",
+								"updateCategory",
+								"65a67e97a8437af710e328db"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Category",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YTJiY2EyYzdmYWFhNTQxMjE1OWRjNCIsImlhdCI6MTcwNTMxNzE0MiwiZXhwIjoxNzA1OTIxOTQyfQ.JXw3G_hq78zVNbp9c4zE8QEfKHUaY7GAtXLF-SuY374",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/category/deleteCategory/65a67e97a8437af710e328db",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"category",
+								"deleteCategory",
+								"65a67e97a8437af710e328db"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Food",
+			"item": [
+				{
+					"name": "createFood",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YTJiY2EyYzdmYWFhNTQxMjE1OWRjNCIsImlhdCI6MTcwNTMxNzE0MiwiZXhwIjoxNzA1OTIxOTQyfQ.JXw3G_hq78zVNbp9c4zE8QEfKHUaY7GAtXLF-SuY374",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "paneer tikka",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "330",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "panner is best",
+									"type": "text"
+								},
+								{
+									"key": "foodTags",
+									"value": "spicy",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "main course",
+									"type": "text"
+								},
+								{
+									"key": "code",
+									"value": "DD123",
+									"type": "text"
+								},
+								{
+									"key": "isAvailable",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "resturant",
+									"value": "65a499138ba4100484cf87a5",
+									"type": "text"
+								},
+								{
+									"key": "rating",
+									"value": "4.1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/foods/createFood",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"foods",
+								"createFood"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAll Foods",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/foods/getAllFood",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"foods",
+								"getAllFood"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get SingleFood",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/foods/get/65a680c0a8437af710e328ea",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"foods",
+								"get",
+								"65a680c0a8437af710e328ea"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "By Resturant ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/foods/getByResturant/65a499138ba4100484cf87a5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"foods",
+								"getByResturant",
+								"65a499138ba4100484cf87a5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update Food",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YTJiY2EyYzdmYWFhNTQxMjE1OWRjNCIsImlhdCI6MTcwNTMxNzE0MiwiZXhwIjoxNzA1OTIxOTQyfQ.JXw3G_hq78zVNbp9c4zE8QEfKHUaY7GAtXLF-SuY374",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "paneer cury",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "price",
+									"value": "320",
+									"type": "text"
+								},
+								{
+									"key": "foodTags",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "category",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "code",
+									"value": "AA1122",
+									"type": "text"
+								},
+								{
+									"key": "isAvailable",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "resturant",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "rating",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/foods/updateFood/65a680c0a8437af710e328ea",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"foods",
+								"updateFood",
+								"65a680c0a8437af710e328ea"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete Food",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YTJiY2EyYzdmYWFhNTQxMjE1OWRjNCIsImlhdCI6MTcwNTMxNzE0MiwiZXhwIjoxNzA1OTIxOTQyfQ.JXw3G_hq78zVNbp9c4zE8QEfKHUaY7GAtXLF-SuY374",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:8080/foods/deleteFood/65a680c0a8437af710e328ea",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"foods",
+								"deleteFood",
+								"65a680c0a8437af710e328ea"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ORDERS",
+			"item": [
+				{
+					"name": "PLACE ORDER",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YThhNTZjYTU2ZGNlOGI3M2NkMzg3NyIsImlhdCI6MTcwNTU1MTIzMywiZXhwIjoxNzA2MTU2MDMzfQ.gt5cyedTNNLpUod94cNZIzhCgQ_1EM2C3XKxERaftXc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cart\": [\r\n        {\r\n            \"_id\": \"65a657fb9ae64e45edace69b\",\r\n            \"title\": \"mung bhajji\",\r\n            \"description\": \"mung bhajiya\",\r\n            \"price\": 15.99\r\n        }\r\n    ]\r\n    \r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/foods/placeOrder",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"foods",
+								"placeOrder"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ORDER STATUS",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YThhNTZjYTU2ZGNlOGI3M2NkMzg3NyIsImlhdCI6MTcwNTU1MTIzMywiZXhwIjoxNzA2MTU2MDMzfQ.gt5cyedTNNLpUod94cNZIzhCgQ_1EM2C3XKxERaftXc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "status",
+									"value": "prepare",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "status",
+									"value": "preparing",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "status",
+									"value": "on the way",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "deliverd",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/foods/orderStatus/65a8a7e560a16c8bb0c273e1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"foods",
+								"orderStatus",
+								"65a8a7e560a16c8bb0c273e1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
